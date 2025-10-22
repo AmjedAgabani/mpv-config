@@ -1,1 +1,43 @@
+
 # mpv-config
+
+Put all files in C:\Users\[USER]\AppData\Roaming\mpv
+
+### Keybindings Table
+
+| Key/Combination       | Action                                                                                                       | Description                                                                                       |
+|----------------------|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| AXIS_UP              | add volume 2                                                                                                 | Increase volume slightly                                                                          |
+| AXIS_DOWN            | add volume -2                                                                                                | Decrease volume slightly                                                                          |
+| MBTN_BACK            | ignore                                                                                                       | Disables back mouse button input                                                                  |
+| MBTN_FORWARD         | ignore                                                                                                       | Disables forward mouse button input                                                               |
+| UP                   | add volume 2                                                                                                 | Increase volume slightly                                                                          |
+| DOWN                 | add volume -2                                                                                                | Decrease volume slightly                                                                          |
+| Shift+RIGHT          | frame-step                                                                                                   | Step forward by one frame                                                                         |
+| Shift+LEFT           | frame-back-step                                                                                              | Step backward by one frame                                                                        |
+| Shift+UP             | add volume 10                                                                                                | Increase volume significantly                                                                     |
+| Shift+DOWN           | add volume -10                                                                                               | Decrease volume significantly                                                                     |
+| q                    | ignore                                                                                                       | Disabled shortcut                                                                                 |
+| e                    | add sub-scale +0.05                                                                                          | Slightly increase subtitle size                                                                   |
+| r                    | add sub-scale -0.05                                                                                          | Slightly decrease subtitle size                                                                   |
+| E                    | add sub-gauss +0.05                                                                                          | Increase subtitle blur (Gaussian)                                                                 |
+| R                    | add sub-gauss -0.05                                                                                          | Decrease subtitle blur (Gaussian)                                                                 |
+| t                    | add sub-pos +1                                                                                               | Move subtitles upward                                                                             |
+| z                    | add sub-pos -1                                                                                               | Move subtitles downward                                                                           |
+| Z                    | sub-reload                                                                                                   | Reload subtitle file                                                                              |
+| u                    | cycle sub-fix-timing                                                                                         | Toggle subtitle timing correction                                                                 |
+| U                    | cycle sub-gray                                                                                               | Toggle grayscale subtitles                                                                        |
+| a                    | cycle audio                                                                                                  | Cycle through audio tracks                                                                        |
+| d                    | cycle deinterlace                                                                                            | Toggle deinterlacing mode                                                                         |
+| D                    | af toggle "acompressor=ratio=4,loudnorm"                                                                     | Toggle audio filter (dynamic compression and loudness normalization)                              |
+| g                    | cycle-values sub-ass-override "force" "no"                                                                   | Toggle between forced and normal subtitles                                                        |
+| G                    | cycle correct-pts                                                                                            | Toggle playback timing correction                                                                 |
+| h                    | cycle deband                                                                                                 | Toggle debanding filter to reduce color banding                                                   |
+| k                    | set deband "yes"; cycle-values deband-iterations "2" "4" "6"; show-text ${?deband-iterations==2:Light}${?deband-iterations==4:Medium}${?deband-iterations==6:Strong} | Enable advanced debanding and display selected intensity mode|
+| K                    | vf toggle "format=colormatrix=bt.709"; show_text ${video-out-params/colormatrix}                             | Force BT.709 color matrix                                                                         |
+| L                    | vf toggle "format=colormatrix=bt.601"; show_text ${video-out-params/colormatrix}                             | Force BT.601 color matrix                                                                         |
+| y                    | add sub-delay +0.042                                                                                         | Delay subtitles slightly                                                                          |
+| x                    | add sub-delay -0.042                                                                                         | Advance subtitles slightly                                                                        |
+| b                    | add audio-delay +0.042                                                                                       | Delay audio slightly                                                                              |
+| n                    | add audio-delay -0.042                                                                                       | Advance audio slightly                                                                            |
+| M                    | vf toggle fps=23.976:round=near                                                                              | Toggle output frame rate to 23.976 fps                                                            |
